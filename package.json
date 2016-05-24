@@ -11,8 +11,7 @@
     "url": "https://github.com/qrg/try-react/issues"
   },
   "files": [
-    "src/",
-    "lib/"
+    "src/"
   ],
   "version": "0.0.1",
   "main": "index.js",
