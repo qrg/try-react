@@ -19,9 +19,9 @@ gulp.task('default', [
 
 gulp.task('build', [
   'clean:dest',
-  'build:html',
-  'build:js',
-  'build:css'
+  'build:template',
+  'build:script',
+  'build:style'
 ]);
 
 gulp.task('build:template', ['clean:template'], buildTemplate);

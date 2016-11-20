@@ -11,7 +11,7 @@ import {
 } from '../config';
 
 import {watchTemplate} from './build-template';
-import {watchStyle} from './build-style';
+import buildStyle, {watchStyle} from './build-style';
 
 import buildScript from './build-script';
 
@@ -31,6 +31,7 @@ export default function (done) {
   watchStyle();
 
   buildScript(done, true);
+  buildStyle();
 
   bs.init(BS_INIT_OPTIONS, done);
 }

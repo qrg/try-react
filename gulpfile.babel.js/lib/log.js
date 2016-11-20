@@ -43,3 +43,7 @@ function logPaths(paths) {
   }
   paths.forEach(p => console.log(magenta(path.relative(ROOT, p))));
 }
+
+export function logRebuilding() {
+  return console.log('\nrebuilding...');
+}

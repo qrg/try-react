@@ -19,13 +19,13 @@ export const SCRIPT_BUNDLE_FILENAME = 'bundle';
 
 export const SRC = getSrcPath();
 export const SRC_TEMPLATE = getSrcPath('**', '*.html');
-export const SRC_STYLE = getSrcPath('**', '*.css');
+export const SRC_STYLE = getSrcPath('**', '*.+(css|sass|scss)');
 export const SRC_SCRIPT = getSrcPath('**', `${SCRIPT_ENTRY_FILENAME}.+(js|jsx)`);
 
 export const DEST = getDestPath();
 
 export const WATCH_PATTERN_TEMPLATE = getSrcPath(DIR_TEMPLATE, '**', '*.html');
-export const WATCH_PATTERN_STYLE = getSrcPath(DIR_STYLE, '**', '*.css');
+export const WATCH_PATTERN_STYLE = getSrcPath(DIR_STYLE, '**', '*.+(css|sass|scss)');
 export const WATCH_PATTERN_SCRIPT = getSrcPath(DIR_SCRIPT, '**', '*.js');
 
 // BrowserSync
@@ -41,4 +41,3 @@ export const BS_INIT_OPTIONS = {
   reloadDelay: 100,
   reloadDebounce: 100
 };
-
